@@ -1,0 +1,2 @@
+generate-infrastructure-operations-report.py -text
+controlled-cpu-load.py -text

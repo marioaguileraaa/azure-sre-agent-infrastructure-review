@@ -1,0 +1,26 @@
+@infra-ops-live Generate an evidence-led infrastructure review for the last
+24 hours across the one configured Azure subscription and explicitly approved
+Log Analytics workspaces, covering Azure Arc and Azure-native resources.
+
+Use only generate-infrastructure-operations-report. Return the actual HTML,
+resource CSV, signal CSV and complete JSON with their real returned download
+links or paths; do not invent URLs.
+
+Show the fleet register, comparable recorded CPU traces, evidence-linked owner
+reviews, native event chronology and source coverage. Preserve each source,
+unit, aggregation, denominator, time grain, measurement window, missing bin
+and uncertainty. Keep guest physical memory, Windows commit, container limits,
+plan/node aggregates and managed-service metrics distinct.
+
+Missing evidence is Unknown / Not collected, not zero or healthy. Deliberate
+deallocation is not automatically an outage or an idle-capacity recommendation.
+Separate native alerts from local threshold, peak and median/MAD review flags.
+
+State that the HTML is a dated offline snapshot, not live polling. If discussing
+the video, its lab observations are historical: 10 October 2026, with September
+1-October 1 UTC as the monthly measurement window. Do not call them current.
+
+Never run a load test, start/stop/resize resources, change monitoring or
+permissions, remediate, create a schedule or update an external ticket.
+Do not claim root cause, automatic routing, recovery, savings or SLA compliance
+without independent evidence. Disclose partial coverage and source errors.

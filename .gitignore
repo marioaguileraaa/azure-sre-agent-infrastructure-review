@@ -1,0 +1,14 @@
+__pycache__/
+*.pyc
+.venv/
+handoff-inputs/
+infrastructure-operations-reports/
+*.html
+*.csv
+*.png
+*.jpg
+*.jpeg
+*.pdf
+.env
+.env.*
+privacy-report*.json
