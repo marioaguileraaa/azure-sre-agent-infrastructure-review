@@ -12,3 +12,14 @@ infrastructure-operations-reports/
 .env
 .env.*
 privacy-report*.json
+
+# Only the nine reviewed original case03 guide captures are tracked.
+!images/infra03-current-overview.png
+!images/infra03-company-logo-placeholder.png
+!images/infra03-current-cpu-recorder.png
+!images/infra03-current-source-coverage.png
+!images/infra03-monthly-overview.png
+!images/infra03-monthly-run-now.png
+!images/infra03-monthly-four-downloads.png
+!images/infra03-native-automatic-investigation.png
+!images/infra03-arc-automatic-investigation.png

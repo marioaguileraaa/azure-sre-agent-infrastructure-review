@@ -1,8 +1,16 @@
 # Sources and attribution
 
 This repository publishes the case03 implementation and customer-neutral
-documentation. It does not redistribute Microsoft portal assets, customer
-documents, private screenshots, raw datasets or deployment receipts.
+documentation, including the complete original English walkthrough, its two
+inline Mermaid diagrams and nine original lab screenshots reviewed and
+authorized for public reuse by their owner. The illustrations retain their
+original pixels, numbered red callouts and historical/date/stage qualifications;
+they are not newly collected telemetry or recreated setup UI.
+
+No customer documents, customer branding, private raw captures, raw datasets,
+deployment identities, credentials, private provenance/privacy receipts or
+other-case material are published. Generic lab labels in the reviewed
+illustrations are historical examples, not approved deployment targets.
 The historical facts in README describe a controlled lab on October 10, 2026;
 they are not corporate claims or proof that another deployment will behave
 identically.
@@ -10,7 +18,19 @@ identically.
 The implementation uses Azure APIs and standard Python packages. Their services,
 packages, documentation and trademarks retain their own terms and licenses.
 The repository's MIT license applies to this implementation, not to third-party
-assets or the Azure services themselves.
+assets, Microsoft portal UI or the Azure services themselves. The lab
+screenshots illustrate the owner's use of those services; they do not transfer
+ownership of Microsoft UI, names or trademarks.
+
+## Existing public companion media
+
+- [English LinkedIn/video package, v2](https://github.com/marioaguileraaa/azure-sre-agent-infrastructure-review/releases/tag/case03-linkedin-v2)
+- [70-second case03 video, v2](https://github.com/marioaguileraaa/azure-sre-agent-infrastructure-review/releases/download/case03-linkedin-v2/case03-linkedin-final.mp4)
+- [Original video release, v1](https://github.com/marioaguileraaa/azure-sre-agent-infrastructure-review/releases/tag/case03-linkedin-v1)
+
+The releases retain their own dated, identity-redacted film/caption context.
+Restoring the original guide images does not replace those media assets, create
+new lab evidence or claim that a post has been published to LinkedIn.
 
 ## First-party technical references
 

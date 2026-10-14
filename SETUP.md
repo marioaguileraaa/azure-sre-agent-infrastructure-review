@@ -4,7 +4,14 @@ This is a configuration guide, not an instruction to deploy resources, grant
 roles, create schedules or run a CPU exercise automatically. Use an approved
 lab and your own explicitly authorized scope.
 
+This concise checklist accompanies the [complete original illustrated
+walkthrough](README.md#contents), including its setup/runtime diagrams, detailed
+explanations and nine dated original lab screenshots. Follow that guide for
+the original Step 0-6 order; the existing checklist headings below remain stable.
+
 ## 1. Configure the fixed scope
+
+Full walkthrough: [Step 0 - Fixed scope and read access](README.md#step-0---fixed-scope-and-read-access).
 
 Edit only the deployment copy of the report tool's top-level constants:
 
@@ -30,6 +37,9 @@ The tool never installs monitoring or expands permissions to hide a blind spot.
 
 ## 2. Create the Python tool in an authorized SRE environment
 
+Full walkthrough: [Step 1 - Create and test the Python tool](README.md#step-1---create-and-test-the-python-tool),
+including the [optional company-logo configuration](README.md#optional-company-logo).
+
 Name it `generate-infrastructure-operations-report`. Paste the complete
 configured Python source. Use its typed `main()` signature and the exact
 parameter schema. Make the direct requirements available in the runtime.
@@ -45,6 +55,9 @@ access or downloadable files.
 
 ## 3. Attach one skill and explicitly select one tool
 
+Full walkthrough: [Step 2 - Create the skill](README.md#step-2---create-the-skill)
+and [Step 3 - Restrict the subagent](README.md#step-3---restrict-the-subagent).
+
 Create `infra-ops-live` from [SKILL.md](skills/infra-ops-live/SKILL.md).
 Create the restricted specialist using the instructions in
 [subagent-instructions-and-prompts.md](subagent-instructions-and-prompts.md).
@@ -55,6 +68,8 @@ Do not attach a shell, guest Run Command, stress utility, write-capable
 connector or generic remediation toolbox. A prompt is not a permission control.
 
 ## 4. Request a report and inspect its evidence
+
+Full walkthrough: [Step 4 - Reports and fresh questions](README.md#step-4---reports-and-fresh-questions).
 
 ```text
 @infra-ops-live Generate a real last-24-hours infrastructure report for both
@@ -85,6 +100,8 @@ identical. Do not broaden storage permissions to work around a failure.
 
 ## 5. Keep a monthly review to one complete report call
 
+Full walkthrough: [Step 5 - Monthly task and run now](README.md#step-5---monthly-task-and-run-now).
+
 The optional monthly configuration uses the previous UTC calendar month and
 `0 9 1 * *` (day 1, 09:00 UTC). Read [monthly-task-prompt.md](monthly-task-prompt.md).
 Create a schedule only with separate authorization; these files do not create
@@ -101,6 +118,10 @@ Query paging is not a stable stored cursor: each live call collects fresh data.
 
 ## 6. Understand an incident without changing the machine
 
+Full walkthrough: [Step 6 - Real alert to subagent demonstration](README.md#step-6---real-alert-to-subagent-demonstration).
+The separate historical operator exercise in that section is not part of this
+read-only handler configuration.
+
 An isolated, authorized response plan can route an actual Azure Monitor incident
 to `infra-ops-live` in Review mode. Verify the real incident, response-plan
 mapping, selected handler and completed investigation separately from the
@@ -113,6 +134,9 @@ provides evidence-linked owner checks. It does not start/stop/resize a resource,
 run guest commands, apply load or update an external ticket.
 
 ## Separate operator-only CPU utility
+
+See the original guide's [safety gate](README.md#safety-gate) and
+[operator-only bounded CPU command](README.md#operator-only-bounded-cpu-command).
 
 `controlled-cpu-load.py` is included for code completeness and offline safety
 tests. It is **not** part of the SRE tool, skill, monthly task or incident handler.
